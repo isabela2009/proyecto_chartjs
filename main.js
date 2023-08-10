@@ -24,7 +24,7 @@ function cargarDatos() {
                         label: "Valor de Dolar",
                         data: costos,
                         fill: true,
-                        backgroundColor: "#ccd9ff",
+                        backgroundColor: "#DAC0A3",
                         borderColor: "black"
                     },
                 ],
