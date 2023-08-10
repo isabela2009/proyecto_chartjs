@@ -6,14 +6,23 @@ function cargarDatos() {
     axios.get("https://api.coincap.io/v2/assets").then(resultado => {
         console.log(resultado);
         //Las etiquetas de los valores obtenidos   
-        const etiquetas = resultado.data.data.map(item => {
-            return item.symbol.toUpperCase();
-        })
+        const etiquetas = [];
 
-        //Los valores de comparacion
-        const costos = resultado.data.data.map(item => {
-            return parseInt(item.priceUsd)
-        })
+        const costos = [];
+
+       
+
+        for (item of resultado.data.data) {
+
+            if (item.priceUsd > 100) {
+
+                etiquetas.push(item.symbol.toUpperCase())
+
+                costos.push(parseInt(item.priceUsd))
+
+            }
+
+        }
 
         const myChart = new Chart(grafica, {
             type: "line",
