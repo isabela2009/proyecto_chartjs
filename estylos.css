@@ -5,3 +5,43 @@ thead th {
     background-color: #343a40; 
     color: white;
 }
+footer{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .iconosfootercontenido, .menufootercontenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .iconosfooter{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px ;
+    border: 1px solid white;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/174/174848.png");
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .iconosfooter:hover{
+    background-color: white;
+    filter: invert(1);
+  }
+  .iconosfooter:nth-of-type(2){
+    background-image: url("https://cdn-icons-png.flaticon.com/512/174/174855.png");
+  }
+  .iconosfooter:nth-of-type(3){
+    background-image: url("https://w7.pngwing.com/pngs/986/124/png-transparent-tiktok-social-media-logos-brands-icon-thumbnail.png");
+  }
+  .iconosfooter:nth-of-type(4){
+    background-image: url("https://cdn.icon-icons.com/icons2/70/PNG/512/youtube_14198.png");
+  }

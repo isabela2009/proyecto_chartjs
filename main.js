@@ -25,7 +25,7 @@ function cargarDatos() {
         }
 
         const myChart = new Chart(grafica, {
-            type: "line",
+            type: "bar",
             data: {
                 labels: etiquetas,
                 datasets: [
@@ -34,7 +34,8 @@ function cargarDatos() {
                         data: costos,
                         fill: true,
                         backgroundColor: "#DAC0A3",
-                        borderColor: "black"
+                        borderColor: "black",
+                        borderRadius:"25"
                     },
                 ],
             },
